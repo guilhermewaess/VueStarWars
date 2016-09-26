@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './App.vue';
-import App2 from './App-1.vue';
+import Home from './Home.vue';
 
 import 'jquery';
 import './assets/semantic/semantic.css';
@@ -15,7 +15,7 @@ const router = new VueRouter();
 
 router.map({
   '/home': {
-    component: App2,
+    component: Home,
   },
 });
 
