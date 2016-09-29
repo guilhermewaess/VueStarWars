@@ -1,7 +1,21 @@
 <template>
-    Your Template Here
+    <div>
+        <ul>
+            <li v-for="movie in movies">
+                {{movie.name}}
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>
-    export default {};
+    import { movies } from './store/getters';
+
+    export default {
+      vuex: {
+        getters: {
+          movies,
+        },
+      },
+    };
 </script>

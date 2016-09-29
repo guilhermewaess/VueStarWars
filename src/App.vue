@@ -1,15 +1,17 @@
 <template>
   <content-menu></content-menu>
-  <div class="ui container">
-    <router-view class="view pushable" keep-alive transition transition-mode="out-in">
+  <div class="ui container pushable">
+    <router-view>
     </router-view>
   </div>
 </template>
 
 <script>
+  import store from './store/Store';
   import ContentMenu from './menus/ContentMenu';
   
   export default {
+    store,
     components: {
       ContentMenu,
     },
