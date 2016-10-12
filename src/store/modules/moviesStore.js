@@ -1,7 +1,7 @@
 import { UPDATE_MOVIES, SET_CURRENT_MOVIE } from './../mutation-types';
 
 const state = {
-  movies: [{ name: 'Filme1' }],
+  movies: [],
   currentMovie: {},
 };
 

@@ -58,11 +58,14 @@
     ready() {
       $('#movie-accordion').accordion();
     },
+		route: {
+			activate(transition) {
+				if (this.movie.episode_id) {
+					transition.next();
+				}else{
+					transition.redirect({name: 'home'});
+				}
+			}
+		}		
   }
 </script>
-
-<style>
-	.episode-id {
-		float: right;
-	}
-</style>
