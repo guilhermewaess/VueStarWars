@@ -1,22 +1,18 @@
 <template>
-	<h1 class="ui center aligned header">{{movie.title}}</h1>
+	<h1 class="ui center aligned header">
+		<div class="content">{{movie.title}}</div>
+		<div class="sub header">Episode {{movie.episode_id}}</div>
+	</h1>
 
 	<div class="ui raised segments">
-		<div class="ui segment">
-			<div class="episode-id">
-				<div class="ui black label">Episode
-					<div class="detail">{{movie.episode_id}}</div>
-				</div>
-			</div>
-			<div>
-				<h3 class="ui center aligned header">
-					Opening Crawl
-				</h3>
-				<p>{{movie.opening_crawl}}</p>
-			</div>
+		<div class="ui inline segment">
+			<h3 class="ui center aligned header">
+				Opening Crawl
+			</h3>
+			<p>{{movie.opening_crawl}}</p>
 		</div>
 		<div class="ui center aligned segment">
-			<div class="ui grid">
+			<div class="ui center aligned grid">
 				<div class="five wide column">
 					<div class="ui black label">
 						Release Date
@@ -66,7 +62,7 @@
 </script>
 
 <style>
-	.episode-id{
+	.episode-id {
 		float: right;
 	}
 </style>
