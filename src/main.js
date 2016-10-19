@@ -5,6 +5,7 @@ import VueResource from 'vue-resource';
 import App from './App.vue';
 import Home from './Home.vue';
 import MovieDetails from './MovieDetails.vue';
+import Planets from './components/Planets.vue';
 
 
 import 'jquery';
@@ -29,6 +30,10 @@ router.map({
   '/movie': {
     name: 'movie',
     component: MovieDetails,
+  },
+  '/planets': {
+    name: 'planets',
+    component: Planets,
   },
 });
 
