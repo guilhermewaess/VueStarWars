@@ -39,7 +39,7 @@
 					<i class="dropdown icon"></i> Planets
 				</div>
 				<div class="content">
-					<p>Teste</p>
+					<planets></planets>
 				</div>
 			</div>
 		</div>
@@ -48,6 +48,7 @@
 
 <script>
   import { movie } from './store/getters';
+	import Planets from './components/Planets.vue';
 
   export default {
     vuex: {
@@ -55,6 +56,9 @@
         movie,
       },
     },
+		components: {
+			Planets,
+		},
     ready() {
       $('#movie-accordion').accordion();
     },

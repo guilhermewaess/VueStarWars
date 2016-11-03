@@ -1,10 +1,10 @@
 import * as mutations from './mutation-types';
-import getFilms from './../services/moviesService';
+import getMovies from './../services/moviesService';
 import getPlanets from './../services/planetsService';
 
 
-export const updateFilms = ({ dispatch }) => {
-  getFilms().then((response) => {
+export const updateMovies = ({ dispatch }) => {
+  getMovies().then((response) => {
     dispatch(mutations.UPDATE_MOVIES, response.body.results);
   });
 };

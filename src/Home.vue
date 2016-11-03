@@ -11,7 +11,7 @@
 
 <script>
     import { movies } from './store/getters';
-    import { updateFilms, setCurrentMovie } from './store/actions';
+    import { updateMovies, setCurrentMovie } from './store/actions';
 
     export default {
       vuex: {
@@ -19,12 +19,12 @@
           movies,
         },
         actions: {
-          updateFilms,
+          updateMovies,
           setCurrentMovie
         },
       },
       created() {
-        this.updateFilms();
+        this.updateMovies();
       },
       methods: {
         goToMovieDetail(movie){

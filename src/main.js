@@ -9,15 +9,14 @@ import Planets from './components/Planets.vue';
 
 
 import 'jquery';
-import './assets/semantic/semantic.css';
-import './assets/semantic/semantic.js';
+
 
 // install router
 Vue.use(VueRouter);
 
 // install VueResource
 Vue.use(VueResource);
-Vue.url.options.root = 'http://swapi.co/api';
+Vue.url.options.root = 'https://swapi.co/api';
 
 // routing
 const router = new VueRouter();

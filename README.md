@@ -1,6 +1,14 @@
-# vuewars
+# VueWars
 
-> A VueJs example based on Star Wars movies.
+> A VueJs (V1) example based on Star Wars movies.
+> My first idea was make a example with a vuex multiple stores and vue components.
+
+## Big thanks for the amazing public api [SWAPI](https://swapi.co/)
+
+## Next steps
+
+Write unit tests
+Write the same example in VueJs (V2) 
 
 ## Build Setup
 

@@ -16,7 +16,8 @@
 
 <script>
   import { planets, loadingPlanets } from './../store/getters';
-  import { updatePlanets, setCurrentPlanet } from './../store/Actions';
+  import { updatePlanets, setCurrentPlanet } from './../store/actions';
+  
 
   export default {
     vuex: {
